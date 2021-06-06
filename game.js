@@ -64,9 +64,10 @@ function nextSequence() {
   playSound(randomChosenColour);
 }
 
+
 //play sound on click
-function playSound(name) {
   var audio = new Audio("./sounds/" + name + ".mp3");
+function playSound(name) {
   audio.play();
 }
 
