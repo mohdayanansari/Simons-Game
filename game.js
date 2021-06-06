@@ -64,11 +64,17 @@ function nextSequence() {
   playSound(randomChosenColour);
 }
 
-
+let audio ={
+  blue : new Audio("./sounds/blue.mp3"),
+  green : new Audio("./sounds/green.mp3"),
+  red : new Audio("./sounds/red.mp3"),
+  wrong : new Audio("./sounds/wrong.mp3"),
+  yellow : new Audio("./sounds/yellow.mp3")
+}
 //play sound on click
-  var audio = new Audio("./sounds/" + name + ".mp3");
+  
 function playSound(name) {
-  audio.play();
+  audio[name].play();
 }
 
 //animation
